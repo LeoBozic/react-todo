@@ -1,38 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(37, 37, 37);
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(165, 189, 192);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  padding: 30px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formDiv {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  max-width: 900px;
+  display: flex;
+}
+
+form input {
+  width: 700px;
+  height: 40px;
+  background-color: rgb(190, 208, 211);
+  border: 2px solid rgb(84, 94, 95);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 20px;
+  font-size: large;
+}
+form button {
+  background-color: rgb(190, 208, 211);
+  border: 2px solid rgb(84, 94, 95);
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+form button:hover {
+  background-color: rgb(160, 180, 184);
+}
+
+ul {
+  width: 780px;
+  margin: 30px auto;
+  border: 2px solid rgb(84, 94, 95);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+}
+
+li button {
+  height: 36px;
+  width: 50px;
+  background-color: rgb(160, 180, 184);
+  border: 1px solid rgba(197, 197, 197, 0.377);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+li button:hover {
+  background-color: rgb(127, 142, 145);
+}
+
+.taskButtons {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.completed {
+  background-color: rgb(165, 216, 161);
+  text-decoration: line-through;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notCompleted {
+  background-color: rgb(190, 208, 211);
+  border-radius: 4px;
 }
